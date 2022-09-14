@@ -8,7 +8,7 @@ const createColleges= async function(req,res){
 
     let data=req.body
 
-    if (Object.keys(body).length == 0) {
+    if (Object.keys(data).length == 0) {
         return res.status(400).send({ Error: "Body should be not empty" })
     }
 
