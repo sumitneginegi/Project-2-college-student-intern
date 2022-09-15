@@ -136,3 +136,4 @@ let collegeDetails = async function (req, res) {
 //=====================Exporting Funcitons=====================//
 
 module.exports = { createIntern, collegeDetails }
+module
