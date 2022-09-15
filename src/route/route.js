@@ -3,16 +3,18 @@ const express = require('express');
 const router = express.Router();
 
 const {createColleges}=require("../controller/collegeController")
-const {createIntern,getIntern}=require("../controller/internController")
+const {createIntern,collegeDetails}=require("../controller/internController")
 
 
 
-
+//=====================Create Colleges(Post API)=====================//
 router.post("/functionup/colleges",createColleges)
 
+//=====================Create Interns(Post API)=====================//
 router.post("/functionup/interns",createIntern)
 
-router.post("/functionup/collegeDetails",getIntern)
+//=====================Fetch College Details(Get API)=====================//
+router.get("/functionup/collegeDetails",collegeDetails)
 
 
 

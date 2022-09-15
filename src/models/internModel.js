@@ -1,5 +1,7 @@
+//=====================Importing Module and Packages=====================//
 const mongoose = require("mongoose")
 const ObjectID=mongoose.Schema.Types.ObjectID
+
 const internSchema = new mongoose.Schema({
     name:{
         type: String,
@@ -27,6 +29,6 @@ const internSchema = new mongoose.Schema({
         default: false
     },
 
-}, {timestamps: true} )
+} )
 
 module.exports = mongoose.model("Intern", internSchema)
