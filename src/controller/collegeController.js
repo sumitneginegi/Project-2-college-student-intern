@@ -15,7 +15,7 @@ let checkValid = function (value) {
 }
 
 
-
+//===============================Create Colleges==============================================//
 const createColleges = async function (req, res) {
     try {
         let data = req.body
@@ -60,7 +60,7 @@ const createColleges = async function (req, res) {
         let guru={name:college.name, fullName:college.fullName, logoLink:college.logoLink, isDeleted:college.isDeleted}
         return res.status(201).send({ status: true, msg: guru })
     }
-    
+
     catch (error) {
         res.status(500).send({ status: false, msg: error.message })
     }
