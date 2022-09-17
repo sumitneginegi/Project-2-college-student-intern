@@ -16,8 +16,7 @@ mongoose.connect("mongodb+srv://kasarvaibhav777:VqAQ4xWgRUOXRW7N@cluster0.y2iweu
     .then(() => console.log("MongoDb is Connected."))
     .catch(error => console.log(error))
 
-
-
+   
 //===================== Global Middleware for Route =====================//
 app.use('/', route)
 
@@ -27,6 +26,7 @@ app.use(function (req, res) {
     err.status = 400
     return res.status(400).send({ status:false, msg: "Path not Found." })
 })
+
 
 
 

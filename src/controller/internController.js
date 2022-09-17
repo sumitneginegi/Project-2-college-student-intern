@@ -4,7 +4,7 @@ let internModel = require("../models/internModel")
 
 
 //=====================Function to check type of key value=====================//
-let checkValid = function (value) {
+let checkValid = function (value) {         
     if (typeof value == "undefined" || typeof value == "number" || value.length == 0 || typeof value == null) {
         return false
     } else if (typeof value == "string") {
